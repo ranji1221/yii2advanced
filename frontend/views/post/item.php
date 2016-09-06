@@ -1,6 +1,6 @@
 <?php
 	$this->title = $post->title;
-	$this->params['breadcrumbs'][] = ['label'=>'Posts','url'=>['index']];
+	$this->params['breadcrumbs'][] = ['label'=>'Post','url'=>['index']];
 	$this->params['breadcrumbs'][] = $this->title;
 ?>
 
