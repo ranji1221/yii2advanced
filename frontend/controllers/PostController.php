@@ -2,7 +2,7 @@
 
 namespace frontend\controllers;
 
-use common\models\Posts;
+use common\models\Post;
 use yii\data\Pagination;
 
 
