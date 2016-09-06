@@ -16,7 +16,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'author')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'content')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'content')->widget('yidashi\markdown\Markdown',['language'=>'zh']); ?>
 
     <?= $form->field($model, 'status')->textInput() ?>
 

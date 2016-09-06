@@ -22,17 +22,31 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
+            ['class' => 'yii\grid\SerialColumn',
+				'header'=>'id'],
+			
+            //'id',
             'title',
             'author',
-            'content:ntext',
-            'status',
+            //'content:ntext',
+            //'status',
+			[	
+				'attribute' => 'status',
+				'value' => function(){},
+				//在搜索条件（过滤条件）中使用下拉框来搜索
+				'filter' => ['1'=>'正常','0'=>'已删除'],
+				//or
+				/*'filter' => Html::activeDropDownList($searchModel,
+						'status',['1'=>'正常','0'=>'已删除'],
+						['prompt'=>'全部']
+				)*/
+			],
             // 'create_at',
             // 'update_at',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ActionColumn',
+				'header' => '操作'
+			],
         ],
     ]); ?>
 </div>
