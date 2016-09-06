@@ -8,8 +8,9 @@ use yii\data\Pagination;
 
 class PostController extends \yii\web\Controller
 {	
-	
+	                                                                                                                      
 	public function actionSeeder(){
+		//-- \Faker\Factory 包是 Yii 自带的，用来生成随机数据的，详细用法百度得之
 		$faker = \Faker\Factory::create('zh_CN');
 		$a = 0;
 		
@@ -24,11 +25,27 @@ class PostController extends \yii\web\Controller
 		}
 		
 	}
+	
+	public function actionItem($id){
+		$post = Posts::findOne($id);
+		return $this->render('item',['post'=>$post]);
+	}
 
 
     public function actionIndex()
     {
-        return $this->render('index');
+		$posts = Posts::find()->where(['status'=>1])->orderBy(['id'=>SORT_DESC]);
+		
+		$pages = new Pagination(['totalCount'=>$posts->count(),'pageSize'=>5]);
+		
+		$models = $posts->offset($pages->offset)
+		->limit($pages->limit)
+		->all();
+		
+        return $this->render('index',[
+			'models' => $models,
+			'pages' => $pages
+		]);
     }
 
 }
