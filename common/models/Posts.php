@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use yii\behaviors\TimestampBehavior;
 
 /**
  * This is the model class for table "posts".
@@ -42,7 +43,7 @@ class Posts extends \yii\db\ActiveRecord
         return [
             [['title', 'author'], 'required'],
             [['content'], 'string'],
-            [['status', 'default', 'value'=>self::STATUS_ACTIVE],
+            ['status', 'default', 'value'=>self::STATUS_ACTIVE],
             [['title', 'author'], 'string', 'max' => 255],
         ];
     }
