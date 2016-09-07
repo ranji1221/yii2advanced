@@ -1,13 +1,15 @@
-如何利用yii2.0框架开发“个人博客”项目
+yii2.0框架-个人博客
 ===============================
 
 ###开发目标
-* 基于MarkDown编辑器的个人博客系统开发
+* 了解yii2.0advanced框架的各种知识
+* 实现基于MarkDown编辑器的"博客"系统
 
 ###开发环境
+* XAMPP集成化环境
 * PHP的版本为：7.0.9；
 * Yii 2.0.10 Advanced版本；
-* Yii 2.0 扩展，yidashi/yii2-bootstrap-markdown，安装方法：composer require "yidashi/yii2-bootstrap-markdown"；
+* Yii 2.0 的扩展，yidashi/yii2-bootstrap-markdown，安装方法：composer require "yidashi/yii2-bootstrap-markdown"；
 
 ###注意事项
 
@@ -24,12 +26,7 @@ yii2框架本身和第三库，以及自己的本地配置信息。（当然，�
 
 ```
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-advanced/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-advanced/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
-
-DIRECTORY STRUCTURE
--------------------
+###目录结构
 
 ```
 common
