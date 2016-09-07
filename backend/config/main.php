@@ -44,6 +44,29 @@ return [
             'rules' => [
             ],
         ],
+		
+		//-- 设置主题的颜色
+		/*
+			"skin-blue",
+			"skin-black",
+			"skin-red",
+			"skin-yellow",
+			"skin-purple",
+			"skin-green",
+			"skin-blue-light",
+			"skin-black-light",
+			"skin-red-light",
+			"skin-yellow-light",
+			"skin-purple-light",
+			"skin-green-light"
+		*/
+		'assetManager' => [
+			'bundles' => [
+				'dmstr\web\AdminLteAsset' => [
+					'skin' => 'skin-red'
+				]
+			]
+		],
        
     ],
     'params' => $params,
