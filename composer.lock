@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ea2580b41663a4f3d6e275393a782a6f",
-    "content-hash": "a7779b1d42670c4d82159fd4eb870fad",
+    "hash": "297ecc2e210c50d3e6a55b0a1ad88bcf",
+    "content-hash": "57e22a32b869cbd3cc64c0d1ed6df434",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -351,6 +351,33 @@
                 "mailer"
             ],
             "time": "2016-08-19 20:47:22"
+        },
+        {
+            "name": "yidashi/yii2-bootstrap-markdown",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yidashi/yii2-bootstrap-markdown.git",
+                "reference": "74985ea3b3e80dd331188c805bc0dd0087af2ebd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.phpcomposer.com/files/yidashi/yii2-bootstrap-markdown/74985ea3b3e80dd331188c805bc0dd0087af2ebd.zip",
+                "reference": "74985ea3b3e80dd331188c805bc0dd0087af2ebd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "yidashi\\markdown\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "yii2-bootstrap-markdown",
+            "time": "2016-08-29 03:22:38"
         },
         {
             "name": "yiisoft/yii2",
