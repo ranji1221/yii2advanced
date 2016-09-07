@@ -15,11 +15,11 @@ class PostController extends \yii\web\Controller
 		$a = 0;
 		
 		for($i=0;$i<20;$i++){
-			$posts = new Posts();
-			$posts->title = $faker->text($maxNbChars = 20);
-			$posts->author = $faker->name;
-			$posts->content = $faker->text($maxNbChars = 3000);
-			if($posts->insert()) $a += 1;
+			$post = new Post();
+			$post->title = $faker->text($maxNbChars = 20);
+			$post->author = $faker->name;
+			$post->content = $faker->text($maxNbChars = 3000);
+			if($post->insert()) $a += 1;
 			
 			echo "添加".$a."条数据";
 		}
@@ -27,7 +27,7 @@ class PostController extends \yii\web\Controller
 	}
 	
 	public function actionItem($id){
-		$post = Posts::findOne($id);
+		$post = Post::findOne($id);
 		return $this->render('item',['post'=>$post]);
 	}
 
