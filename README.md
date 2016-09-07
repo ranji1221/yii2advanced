@@ -1,11 +1,17 @@
-Yii 2 Advanced Project Template
+基于yii2advanced的博客
 ===============================
+开发目标
+---------------------------------------
+基于MarkDown编辑器的个人博客系统开发
+该“博客”项目是基于yii2.0开发的，曾经使用yii1.0开发过类似的博文项目，但yii2.0
+与1.0变化较大，所以计划使用yii2.0开发一个简易的“博客”项目，目前来看，仅仅
+是为了学习而使用。
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
-
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+鉴于yii2.0的特点，该项目在github提交的时候是不会提交yii2.0框架本身，个人的
+本地配置信息，以及第三库。鉴于此特性，并根据个人的需要，我自己把yii2.0框架
+本身和第三库打包压缩。需要下载该项目的童鞋在git clone该项目后，需要自己准备
+yii2框架本身和第三库，以及自己的本地配置信息。（当然，也可以QQ:95724368我，
+我给你发送一份哦。）
 
 The template is designed to work in a team development environment. It supports
 deploying the application in different environments.
