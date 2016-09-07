@@ -17,7 +17,7 @@
 			<div class="media">
 				<div class="media-body">
 					<h4 class="media-heading">
-						<a href="<?php echo Url::toRoute('post/item','id'=>$model->id);?>"><?php echo $model->title;?></a>
+						<a href="<?php echo Url::toRoute(['post/item','id'=>$model->id]);?>"><?php echo $model->title;?></a>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<small>作者：<?php echo $model->author;?></small>
 					</h4>

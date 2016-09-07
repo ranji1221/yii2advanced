@@ -34,7 +34,7 @@ class PostController extends \yii\web\Controller
 
     public function actionIndex()
     {
-		$posts = Posts::find()->where(['status'=>1])->orderBy(['id'=>SORT_DESC]);
+		$posts = Post::find()->where(['status'=>1])->orderBy(['id'=>SORT_DESC]);
 		
 		$pages = new Pagination(['totalCount'=>$posts->count(),'pageSize'=>5]);
 		
