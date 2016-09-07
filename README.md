@@ -9,7 +9,8 @@ yii2.0框架-个人博客
 * XAMPP集成化环境
 * PHP的版本为：7.0.9；
 * Yii 2.0.10 Advanced版本；
-* Yii 2.0 的扩展，yidashi/yii2-bootstrap-markdown，安装方法：composer require "yidashi/yii2-bootstrap-markdown"；
+* Yii 2.0的扩展，yidashi/yii2-bootstrap-markdown，安装方法：composer require "yidashi/yii2-bootstrap-markdown"；
+* Yii 2.0的主题扩展，yii2-adminlte-asset更是一款基于yii2框架进行开发的后台主题模版，安装方法：composer require dmstr/yii2-adminlte-asset "2.*"
 
 ###注意事项
 
@@ -24,41 +25,4 @@ yii2.0框架-个人博客
 yii2框架本身和第三库，以及自己的本地配置信息。（当然，也可以QQ:95724368我，
 我给你发送一份哦。）
 
-```
-
-###目录结构
-
-```
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
 ```
